@@ -79,4 +79,4 @@ GitOps
 ## References
 
 * https://martinfowler.com/articles/talk-about-platforms.html
-* 
+* https://www.cncf.io
