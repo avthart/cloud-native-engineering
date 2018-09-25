@@ -1,17 +1,16 @@
-# Cloud Native Engineering
+---
+title: "Cloud Native Journey"
+date: 2018-09-25T14:18:46+02:00
+draft: true
+---
 
 Cloud computing changed the required skills for software engineers and system administrators. A cloud-native approach requires new skills, technology and architectures to take advantage of the new world aka `the cloud`.
 
 From the Cloud Native Computing Foundation:
+
 > Cloud-native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure and declarative APIs exemplify this approach.
 
 > These techniques enable loosely coupled systems that are resilient, manageble and observable. Combined with robust automation, they allow engineers to make high impact changes frequently and predictable with minimum toil.
-
-A cloud-native consultant helps customers in their journey to cloud native.
-
-## Cloud Native Landscape
-
-![cloud native landscape](https://raw.githubusercontent.com/cncf/landscape/master/landscape/CloudNativeLandscape_latest.png "Cloud Native Landscape")
 
 ## Cloud Native Journey
 
@@ -32,6 +31,9 @@ Cloud-native facilitates DevOps, a combination of people, process, automation an
 It has the potential to create a culture and an environment where building, testing and releasing software happens rapidly, frequently, and more consistently.
 
 ### Platform Team
+
+![cloud native landscape](https://raw.githubusercontent.com/cncf/landscape/master/landscape/CloudNativeLandscape_latest.png "Cloud Native Landscape")
+
 
 Above is a recent version of the [Cloud Native Landscape](https://landscape.cncf.io/): an attempt to capture some open source and commercial products grouped by arreas of concerns. This overview of (sometimes bleeding edge) technology, can be quite overwelming. Organisations need a platform which is build, automated and tested by a team which can support and facilitate feature teams with building and running systems, consisting of microservices or functions.
 

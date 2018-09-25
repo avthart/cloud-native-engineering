@@ -1,0 +1,39 @@
+baseURL = "http://www.avthart.com/"
+languageCode = "en-us"
+title = "avthart"
+theme = "hyde-hyde"
+
+## Site Settings
+[params]
+    author = "Albert van 't Hart"
+    title = "Cloud Native Engineering"
+    description = "Cloud Native | Microservices | CI/CD | DevOps"
+    # authorimage = "/img/hugo.png"
+    dateformat = "Jan 2, 2006"
+    highlightjs = true
+    highlightjsstyle = "github"
+    # please choose either GraphComment or Disqus
+
+## Social Accounts
+[params.social]
+    github = "avthart"
+    #instagram = "<username>"
+    #xing = "<username>"
+    linkedin = "albertvanthart"
+    twitter = "albertvth"
+    #facebook = "<username>"
+    #stackoverflow = "<username>"
+    #telegram = "<username>"
+    email = "avthart@gmail.com"
+
+## Main Menu
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 300
+    url = "/about/"
