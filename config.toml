@@ -1,17 +1,19 @@
-baseURL = "http://www.avthart.com/"
+baseURL = "https://www.avthart.com/"
 languageCode = "en-us"
 title = "avthart"
 theme = "hyde-hyde"
+summaryLength = "25"
 
 ## Site Settings
 [params]
     author = "Albert van 't Hart"
     title = "Cloud Native Engineering"
     description = "Cloud Native | Microservices | CI/CD | DevOps"
-    # authorimage = "/img/hugo.png"
+    authorimage = "/img/albert.jpeg"
     dateformat = "Jan 2, 2006"
     highlightjs = true
     highlightjsstyle = "github"
+    copyright = "© 2018 Albert van 't Hart. All rights reserved."
     # please choose either GraphComment or Disqus
 
 ## Social Accounts
