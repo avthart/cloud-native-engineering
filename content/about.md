@@ -5,7 +5,7 @@ draft: false
 ---
 **Cloud Native Consultant at KPN ICT Consulting. Husband and father of two boys. Cyclist. Technologist. Music lover.**
 
-Passionated about Software Engineering, Cloud Native, Domain Driven Design, Agile and Security.
+*Passionated about Software Engineering, Cloud Native, Domain Driven Design, Agile and Security.*
 
 Starting November 1st, I will work as Cloud Native Consultant at KPN ICT Consulting. I like to help customers in their journey to Cloud Native with sharing my knowlegde and expertise in this new world. 
 
