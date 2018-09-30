@@ -7,8 +7,8 @@ summaryLength = "25"
 ## Site Settings
 [params]
     author = "Albert van 't Hart"
-    title = "Cloud Native Engineering"
-    description = "Cloud Native | Microservices | CI/CD | DevOps"
+    title = "@avthart"
+    description = "Software Engineering | Cloud Native | Open Source"
     authorimage = "/img/albert.jpeg"
     dateformat = "Jan 2, 2006"
     highlightjs = true

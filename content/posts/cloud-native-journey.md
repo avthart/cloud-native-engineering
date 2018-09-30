@@ -34,10 +34,10 @@ It has the potential to create a culture and an environment where building, test
 
 ![cloud native landscape](https://raw.githubusercontent.com/cncf/landscape/master/landscape/CloudNativeLandscape_latest.png "Cloud Native Landscape")
 
-
 Above is a recent version of the [Cloud Native Landscape](https://landscape.cncf.io/): an attempt to capture some open source and commercial products grouped by arreas of concerns. This overview of (sometimes bleeding edge) technology, can be quite overwelming. Organisations need a platform which is build, automated and tested by a team which can support and facilitate feature teams with building and running systems, consisting of microservices or functions.
 
 What can a cloud-native platform offer?
+
 * The platform is self-service for the overwhelming majority of use cases.
 * The platform is composable, containing discrete services that can be used independently.
 * The platform does not force an inflexible way of working upon the delivery team
