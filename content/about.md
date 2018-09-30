@@ -3,7 +3,7 @@ title: "About"
 date: 2018-09-25T14:27:24+02:00
 draft: false
 ---
-**Cloud Native Consultant at KPN ICT Consulting. Husband and father of two boys. Cycling. Music. Technology.**
+**Cloud Native Consultant at KPN ICT Consulting. Husband and father of two boys. Cyclist. Technologist. Music lover.**
 
 Passionated about Software Engineering, Cloud Native, Domain Driven Design, Agile and Security.
 
