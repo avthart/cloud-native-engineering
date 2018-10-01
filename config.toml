@@ -13,7 +13,7 @@ summaryLength = "25"
     dateformat = "Jan 2, 2006"
     highlightjs = true
     highlightjsstyle = "github"
-    copyright = "© 2018 Albert van 't Hart. All rights reserved."
+    copyright = "© 2018 Albert van 't Hart. All rights reserved. Power by <a href=\"https://gohugo.io\">Hugo</a>"
     # please choose either GraphComment or Disqus
 
 ## Social Accounts
