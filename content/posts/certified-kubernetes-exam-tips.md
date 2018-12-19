@@ -42,7 +42,7 @@ export KUBE_EDITOR="nano"
 
 ### 5. Use kubectl auto completion
 
-Load the kubectl completion code for bash into the current shell. This will speed up using kubectl on the command line.
+Load the kubectl completion code for bash into the current shell. This will help you finding the right commands, options and arguments using kubectl.
 
 ```bash
 source <(kubectl completion bash)
