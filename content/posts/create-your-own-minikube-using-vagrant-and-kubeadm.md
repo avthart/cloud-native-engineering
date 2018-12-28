@@ -4,9 +4,11 @@ date: 2018-12-27T12:00:59+02:00
 draft: false
 ---
 
-I've been exploring severals options for my CKA exam preparation. It is very easy to start with [Minikube](https://github.com/kubernetes/minikube) for playing locally with Kubernetes and learning the basics. I've also followed [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) by Keysel Hightower. This guide is optimized for learning, which means taking the long route to ensure you understand each task required to bootstrap a Kubernetes cluster.
+I've been exploring severals options for my CKA exam preparation. It is very easy to start with [Minikube](https://github.com/kubernetes/minikube) for playing locally with Kubernetes and learning the basics. I've also followed [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) by [Keysel Hightower](https://twitter.com/kelseyhightower) - this guide is optimized for learning, which means taking the long route to ensure you understand each task required to bootstrap a Kubernetes cluster.
 
 Also check my [exam tips](/posts/certified-kubernetes-exam-tips/) on getting certified.
+
+In this post, I will guide you ("the easy way") setting up your own local kubernetes environment using Vagrant and Kubeadm.
 
 ##  Why not Minikube or Docker Mac?
 
