@@ -26,6 +26,9 @@ First, let's install vagrant and virtualbox:
 brew cask install virtualbox vagrant vagrant-manager
 ```
 
+Alternatively, you can also download and install the binary from the Vagrant website (also for Linux and Windows):
+https://www.vagrantup.com/downloads.html
+
 ## Kubernetes Box
 
 We are going to create a very simple Vagrant box:
@@ -77,7 +80,7 @@ Make sure kubelet will use the same cgroup driver as Docker:
 sudo sed -i '0,/ExecStart=/s//Environment="KUBELET_EXTRA_ARGS=--cgroup-driver=cgroupfs"\n&/' /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
 ```
 
-As mentioned before, we will use kubeadm to install the cluster. We only have to provide the node name and ip address that is known by externally, so that we don 't see SSL error messages when connecting from your local machine.
+As mentioned before, we will use kubeadm to install the cluster. We only have to provide the node name and IP address that is known by externally, so that we don 't see SSL error messages when connecting from your local machine.
 
 ```bash
 IPADDR=`ifconfig enp0s8 | grep Mask | awk '{print $2}'| cut -f2 -d:`
@@ -85,12 +88,22 @@ NODENAME=$(hostname -s)
 sudo kubeadm init --apiserver-cert-extra-sans=$IPADDR  --node-name $NODENAME
 ```
 
+> Please note that the network interface can change over time with new Virtualbox or Vagrant versions. You may need to change `enp0s8` to the correct interface.
+
 To start using your cluster, you need to run the following as a regular user (= vagrant user):
 
 ```bash
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+
+You can also copy the file `admin.conf` to your machine so that you can use kubectl locally. You need to change the IP address of the server to IP address of the private network interface (`ifconfig enp0s8`):
+
+```yaml
+clusters:
+- cluster:
+    server: https://172.28.128.3:6443    
 ```
 
 Verify that cluster is working:
