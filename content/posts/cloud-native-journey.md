@@ -59,6 +59,15 @@ In this way both application teams and platform teams have responsibility for bu
 
 ### Infrastructure Automation
 
+No one likes repetitive tasks, so it's important to automate your complete infrastructure. The first step is to use tools (see below) and scripting like python, bash etc to automate your infrastructure. The second step is to keep your scripts and config in version control, for example Git.  
+
+What kind of tools can you use?
+
+* Terraform is an infrastructure as code software by HashiCorp. It allows users to define a datacenter infrastructure in a high-level configuration language, from which it can create an execution plan to build the infrastructure such as OpenStack or in a service provider such as AWS, Microsoft Azure and Google Cloud Platform. It has also support for PaaS (e.g. Heroku), or SaaS services (e.g. Terraform Enterprise, DNSimple, CloudFlare). Infrastructure and services are defined in a HCL Terraform syntax or JSON format.
+
+* Ansible is open source software that automates software provisioning, configuration management, and application deployment. Ansible connects via SSH, remote PowerShell or via other remote APIs. In contrast with popular configuration management software — such as Chef, Puppet, and CFEngine — Ansible uses an agentless architecture. With an agent-based architecture, nodes must have a locally installed daemon that communicates with a controlling machine. With an agentless architecture, nodes are not required to install and run background daemons to connect with a controlling machine. This type of architecture reduces the overhead on the network by preventing the nodes from polling the controlling machine.
+
+
 ### Monitoring & Observability
 
 ### Deployment Patterns
