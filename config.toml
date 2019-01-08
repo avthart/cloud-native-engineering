@@ -4,6 +4,7 @@ title = "avthart"
 theme = "hyde-hyde"
 summaryLength = "25"
 disqusShortname = "https-www-avthart-com"
+googleAnalytics = "UA-131945941-1"
 
 ## Site Settings
 [params]
