@@ -1,6 +1,7 @@
 ---
 title: "10 Tips on the Certified Kubernetes Exam"
 date: 2018-12-19T13:41:59+02:00
+tags: [kubernetes]
 draft: false
 ---
 
