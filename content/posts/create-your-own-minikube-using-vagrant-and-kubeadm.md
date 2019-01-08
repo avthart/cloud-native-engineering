@@ -1,6 +1,7 @@
 ---
 title: "Create your own 'Minikube' using Vagrant and Kubeadm"
 date: 2018-12-27T12:00:59+02:00
+tags: [kubernetes,vagrant]
 draft: false
 ---
 
