@@ -1,12 +1,12 @@
 ---
 title: "GitOps for Kubernetes"
-date: 2019-01-01T15:00:59+02:00
-draft: true
+description: "Using Git as a single source of truth for declarative infrastructure and applications"
+tags: [kubernetes,gitops,ci-cd,cloud-native]
+date: 2019-01-08T12:00:59+02:00
+draft: false
 ---
 
-> Using Git as a single source of truth for declarative infrastructure and applications
-
-This site uses [Hugo](https://gohugo.io/), [Netlify](https://www.netlify.com/), and [GitHub](https://github.com/avthart/cloud-native-engineering) and embraces Git as single source of thruth. The website is deployed automatically using a `git push`. The underlying infrastructure (Site hosting, DNS, HTTPS using Letsencrypt) is managed by Netlify. The official [Kubernetes website](https://github.com/kubernetes/website) uses the same stack.
+This site uses [Hugo](https://gohugo.io/), [Netlify](https://www.netlify.com/), and [GitHub](https://github.com/avthart/cloud-native-engineering) and embraces Git as single source of thruth. The website is build and deployed automatically using a `git push`. The underlying infrastructure (Site hosting, DNS, HTTPS using Letsencrypt) is managed by Netlify. The official [Kubernetes website](https://github.com/kubernetes/website) uses the same stack.
 
 This is just one example of using Git for declarative infrastructure and applications. 
 
@@ -14,7 +14,7 @@ Infrastructure-as-code, application configuration as code, deployments, monitori
 
 ## GitOps
 
-Enter [GitOps](https://www.weave.works/technologies/gitops/). Initially proposed by Alexis Richardson from Weaveworks, GitOps is a way to do Continuous Delivery. It works by using Git as a single source of truth for declarative infrastructure and applications.  
+Enter [GitOps](https://www.weave.works/technologies/gitops/). Initially proposed by Alexis Richardson from Weaveworks, GitOps is a way to do [Continuous Delivery](https://continuousdelivery.com/). It works by using Git as a single source of truth for declarative infrastructure and applications.  
 
 {{< tweet 953638870888849408 >}}
 
@@ -24,11 +24,11 @@ GitOps describes best practices for faster app development while reducing risks:
 * **Everything is code** - having complete history configuration and state of your system in git (includes infrastructure, apps, config, monitoring). You will also get out-of-the-box auditing. 
 * **Mean Time to Recovery** - simply rollback broken configuration using a `git revert` or redeploy a system in minutes if it failed completely.
 * **Observability** - use diff tools to detect changes and get notifications in your favorite chat tool.
-* **Security** - it is easier to commit the changes to a git repository, so users doest not have to manage hundreds of credentials. And you don 't need your CI system access to servers or a Kubernetes cluster. 
+* **Security** - commit changes to a git repository, so that users does not have to manage hundreds of credentials (API tokens, certificates or passwords). You don 't need your CI system access to servers or a Kubernetes cluster. 
 
 ## Kubernetes
 
-Kubernetes has become the defacto way of operating containers at scale on any public or private cloud. All major public cloud providers supports Kubernetes natively.
+[Kubernetes](https://www.kubernetes.io) has become the defacto way of operating containers at scale on any public or private cloud. All major public cloud providers supports Kubernetes natively.
 
 Most people are using `kubectl` directly for deploying and updating  applications.
 
@@ -43,8 +43,8 @@ GitOps is a way to do Continuous Delivery. For Kubernetes this means using `git 
 In order to apply GitOps for Kubernetes you need three things:
 
 1. a Git repository with your workloads definitions in plain YAML/JSON format, Helm charts and any other Kubernetes custom resource that defines your cluster desired state
-2. a container registry where your CI system pushes immutable images 
-3. a Kubernetes controller that follows the operator pattern, your cluster always stays in sync with ‘the source of truth’ via its configuration files that are checked into Git. And since the desired state of your cluster is kept in Git, it can also be observed for differences against the running cluster.
+2. a container registry where your CI system pushes [immutable images](https://cloud.google.com/solutions/best-practices-for-operating-containers#immutability)
+3. a Kubernetes controller that follows the [operator pattern](https://coreos.com/operators/), your cluster always stays in sync with ‘the source of truth’ via its configuration files that are checked into Git. And since the desired state of your cluster is kept in Git, it can also be observed for differences against the running cluster.
 
 There are a couple of interesting open source tools for Kubernetes that support GitOps best practices.
 
@@ -74,9 +74,7 @@ Jenkins X is using [Draft](https://draft.sh/) and [Helm](https://helm.sh/) to in
 
 ## Future of GitOps
 
-A lot has been written about GitOps as a “single source of truth for the whole system” for using Git for Kubernetes deployments on the cloud.
-
-In one of the keynotes, CNCF COO, Alexis Richardson, presented the [CNCF 2020 vision](https://www.youtube.com/watch?v=qUK-F40oLVQ&t=752s). In the next couple of years will see a rise of “GitOps” as a new way of implementing Continous Delivery for Cloud Native applications.
+A lot has been written about GitOps as a “single source of truth for the whole system”. In one of the keynotes, CNCF COO, Alexis Richardson, presented the [CNCF 2020 vision](https://www.youtube.com/watch?v=qUK-F40oLVQ&t=752s). In the next couple of years will see a rise of “GitOps” as a new way of implementing Continous Delivery for Cloud Native applications.
 
 I expect there will be more open source projects and vendors that will invest in GitOps.
 
