@@ -10,12 +10,12 @@ googleAnalytics = "UA-131945941-1"
 [params]
     author = "Albert van 't Hart"
     title = "@avthart"
-    description = "Software Engineering | Cloud Native | Open Source"
+    description = "Software Engineering | Cloud Native | SRE | Open Source"
     authorimage = "/img/albert.jpeg"
     dateformat = "Jan 2, 2006"
     highlightjs = true
     highlightjsstyle = "github"
-    copyright = "© 2018 Albert van 't Hart. All rights reserved. Power by <a href=\"https://gohugo.io\">Hugo</a>"
+    copyright = "© 2019 Albert van 't Hart. All rights reserved. Power by <a href=\"https://gohugo.io\">Hugo</a>"
     # please choose either GraphComment or Disqus
 
 ## Social Accounts
