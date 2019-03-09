@@ -37,6 +37,11 @@ googleAnalytics = "UA-131945941-1"
     identifier = "posts"
     url = "/posts/"
 [[menu.main]]
+    name = "Dev Environment"
+    identifier = "dev-env"
+    weight = 400
+    url = "https://dev-environment.avthart.com/"    
+[[menu.main]]
     name = "About"
     identifier = "about"
     weight = 300

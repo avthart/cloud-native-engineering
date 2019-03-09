@@ -7,6 +7,8 @@ draft: false
 
 I took the CKAD exam two weeks ago and passed it with 95% score at my first attempt! There 's a lot of overlap with the CKA exam, so I am planning to do this exam as well.
 
+> Update 18 Feb -  CKA is also in the pocket. Passed it with a score of 90%. Very happy that I now have both certifications.
+
 The exams are about speed and efficiency. For the CKA exam you will have 7,5 minute per question and for the CKAD exam you will only have 6 min per question. There 's no time to lookup the documentation for every question. You have to practice, practice and practice. 
 
 With that said, time management is very important. Here are 10 tips on passing the exam.
@@ -95,7 +97,7 @@ Make sure that you know how to interact with system services on this GNU Linux d
 
 ### 10. You have a free retake
 
-Don’t worry if you fail the exam—you get a free retake! 
+Don’t worry if you fail the exam—you get a free retake!
 
-Here is my CKAD certificate:
 ![CKAD](/img/CKAD_Certificate_Albert_sm.png "CKAD Certificate")
+![CKA](/img/CKA_Certificate_Albert_sm.png "CKA Certificate")
